@@ -17,3 +17,5 @@
     model = "Qualcomm Technologies, Inc. Canoe MTP,dengta";
     oplus,project-id = <25211 25212>;
 };
+
+#include "dengta-canoe-common.dtsi"
