@@ -1,0 +1,25 @@
+Firmware-specific properties for the imported Pad 4 / Find X9 Ultra data
+======================================================================
+
+oplus,pmic-pon-log-version (u32, /soc)
+  Omit for the legacy phone PON event layout. Value 2 selects the Pad 4 /
+  Find X9 Ultra layout. Their vendor sources assign VREG_READY_CHECK event
+  0x20; infiniti, fairlady and both macan sources assign 0x15. The monitor
+  translates legacy IDs before decoding; new IDs are not assumed on phones.
+
+oplus,force-dwc31-revision (boolean, USB controller)
+  Dengta alone selects the Find X9 Ultra vendor revision workaround. It
+  forces revision 2.00a in suspend and 1.80a after host VBUS is disabled.
+  Existing phone controllers omit the property and retain native behavior.
+  This property requires the companion kernel DWC3 patch.
+
+oplus,reg-otp-entry-size (u32, camera sensor)
+  Lighthouse selects six cells per OTP record. Existing phones default to
+  five cells. The sensor parser validates stride, record count and byte-sized
+  fields before accepting a sequence; this property requires the companion
+  camera module patch.
+
+These properties describe source compatibility. They do not establish that
+firmware, proprietary services or hardware work on a LineageOS image.
+Dengta/lighthouse and Iceland must use their own firmware and calibration.
+Dengta EVB3 is omitted because the supplied audio calibration is incomplete.
