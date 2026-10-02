@@ -52,3 +52,9 @@ filegroup(
     srcs = ["oplus/iceland_dtbo.config"],
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "dengta_dtbo_config",
+    srcs = ["oplus/dengta_dtbo.config"],
+    visibility = ["//visibility:public"],
+)
