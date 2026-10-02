@@ -83,6 +83,10 @@ properties:
    vdd-wlan-ant-share-supply:
      description: phandle to the Antenna Sharing regulator.
 
+   drop-l3k:
+     type: boolean
+     description: Skip PDC mode votes on boards without the L3K regulator.
+
    vdd-wlan-xtal-supply:
      description: phandle to the 1.8V XTAL regulator for QCA6174.
 
