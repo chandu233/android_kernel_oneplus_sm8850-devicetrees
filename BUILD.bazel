@@ -46,3 +46,9 @@ filegroup(
     srcs = ["oplus/fairlady_dtbo.config"],
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "iceland_dtbo_config",
+    srcs = ["oplus/iceland_dtbo.config"],
+    visibility = ["//visibility:public"],
+)
