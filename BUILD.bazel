@@ -34,3 +34,9 @@ kernel_dtstree(
     ],
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "infiniti_dtbo_config",
+    srcs = ["oplus/infiniti_dtbo.config"],
+    visibility = ["//visibility:public"],
+)
