@@ -58,3 +58,9 @@ filegroup(
     srcs = ["oplus/dengta_dtbo.config"],
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "macan_dtbo_config",
+    srcs = ["oplus/macan_dtbo.config"],
+    visibility = ["//visibility:public"],
+)
