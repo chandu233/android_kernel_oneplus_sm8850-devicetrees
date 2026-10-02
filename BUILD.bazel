@@ -40,3 +40,9 @@ filegroup(
     srcs = ["oplus/infiniti_dtbo.config"],
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "fairlady_dtbo_config",
+    srcs = ["oplus/fairlady_dtbo.config"],
+    visibility = ["//visibility:public"],
+)
