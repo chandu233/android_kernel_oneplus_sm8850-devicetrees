@@ -9,7 +9,7 @@
 #include "../qcom/display/oplus/canoe-display-overlay-common.dtsi"
 #include "../qcom/display/oplus/lighthouse-25021-display-canoe-overlay.dtsi"
 
-#include "../qcom/wlan/oplus/canoe-peach-cnss-overlay.dtsi"
+#include "../qcom/wlan/canoe-peach-cnss.dtsi"
 
 #include <dt-bindings/oplus/hw-id.h>
 #include "../qcom/audio/canoe-audio-mtp.dtsi"
